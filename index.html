@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="nav-header">Documentación de JS</header>
+            <a class="nav-link" href="#Introducción">Introducción</a>
+            <a class="nav-link" href="#Lo_que_ya_deberías_saber">Lo que ya deberías saber</a>
+            <a class="nav-link" href="#JavaScript_y_Java">JavaScript y Java</a>
+            <a class="nav-link" href="#Variables">Variables</a>
+            <a class="nav-link" href="#Variables_globales">Variables globales</a>
+            <a class="nav-link" href="#Declaración_if...else">Declaración if...else</a>
+    </nav>
+    <main id="main-doc">
+        <section id="Introducción" class="main-section">
+            <header>Introducción</header>
+            <p>JavaScript es un lenguaje de programación multiplataforma orientado a objetos. Es un    lenguaje pequeño y liviano. Dentro de un entorno host (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar control programático sobre ellos.</p>
+            <p>JavaScript contiene una biblioteca estándar de objetos, como Array, Date y Math, y un conjunto básico de elementos del lenguaje, como operadores, estructuras de control y sentencias. El núcleo de JavaScript se puede ampliar para diversos fines si se lo complementa con objetos adicionales; por ejemplo:</p>
+            <ul>
+                <li>El JavaScript del lado del cliente extiende el lenguaje principal al proporcionar objetos para controlar un navegador y su modelo de objetos de documento (DOM). Por ejemplo, las extensiones del lado del cliente permiten que una aplicación coloque elementos en un formulario HTML y responda a eventos del usuario, como clics del mouse, entrada de datos en el formulario y navegación de páginas.</li>
+                <li>El JavaScript del lado del servidor extiende el lenguaje principal al proporcionar objetos relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones del lado del servidor permiten que una aplicación se comunique con una base de datos, proporcione continuidad de información de una invocación a otra de la aplicación o realice manipulaciones de archivos en un servidor.</li>
+            </ul>
+        </section>
+        <section id="Lo_que_ya_deberías_saber" class="main-section">
+            <header>Lo que ya deberías saber</header>
+                <p>Esta guía asume que usted tiene los siguientes conocimientos básicos:</p>
+                <ul>
+                    <li>Una comprensión general de Internet y la World Wide Web (WWW).</li>
+                    <li>Buen conocimiento práctico del lenguaje de marcado de hipertexto (HTML).</li>
+                    <li>Un poco de experiencia en programación. Si no tienes experiencia en programación, prueba alguno de los tutoriales vinculados en la página principal sobre JavaScript.</li>
+            </ul>
+        </section>
+        <section id="JavaScript_y_Java" class="main-section">
+            <header>JavaScript y Java</header>
+                <p>JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El lenguaje JavaScript se parece a Java, pero no tiene la tipificación estática ni la verificación de tipos estricta de Java. JavaScript sigue la mayor parte de la sintaxis de expresiones, las convenciones de nombres y las construcciones básicas de flujo de control de Java, razón por la cual se le cambió el nombre de LiveScript a JavaScript.</p>
+                <p>A diferencia del sistema de clases en tiempo de compilación de Java, creado mediante declaraciones, JavaScript admite un sistema de ejecución basado en una pequeña cantidad de tipos de datos que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objetos basado en prototipos en lugar del modelo de objetos basado en clases más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar para objetos individuales. JavaScript también admite funciones sin ningún requisito declarativo especial. Las funciones pueden ser propiedades de objetos y ejecutarse como métodos de tipado flexible.</p>
+                <p>En comparación con Java, JavaScript es un lenguaje de formato muy libre. No es necesario declarar todas las variables, clases y métodos. No es necesario preocuparse por si los métodos son públicos, privados o protegidos y no es necesario implementar interfaces. Las variables, los parámetros y los tipos de retorno de funciones no están tipificados explícitamente.</p>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>Las variables se utilizan como nombres simbólicos para los valores de la aplicación. Los nombres de las variables, denominados identificadores, cumplen ciertas reglas.</p>
+            <p>Un identificador de JavaScript debe comenzar con una letra, un guión bajo (_) o un signo de dólar ($); los caracteres siguientes también pueden ser dígitos (0-9). Debido a que JavaScript distingue entre mayúsculas y minúsculas, las letras incluyen los caracteres de la "A" a la "Z" (mayúsculas) y los caracteres de la "a" a la "z" (minúsculas).</p>
+            <p>Puede utilizar letras ISO 8859-1 o Unicode como å y ü en los identificadores. También puede utilizar las secuencias de escape Unicode como caracteres en los identificadores. Algunos ejemplos de nombres legales son Number_hits, temp99 y _name.</p>
+        </section>
+        <section id="Variables_globales" class="main-section">
+            <header>Variables globales</header>
+            <p>Las variables globales son, de hecho, propiedades del objeto global. En las páginas web, el objeto global es window, por lo que puedes configurar y acceder a las variables globales mediante la sintaxis window.variable.</p>
+            <p>En consecuencia, puede acceder a las variables globales declaradas en una ventana o marco desde otra ventana o marco especificando el nombre de la ventana o marco. Por ejemplo, si se declara una variable llamada phoneNumber en un documento, puede hacer referencia a esta variable desde un iframe como parent.phoneNumber.</p>
+        </section>
+        <section id="Declaración_if...else" class="main-section">
+            <header>Declaración if...else</header>
+            <p>Utilice la sentencia if para ejecutar una sentencia si una condición lógica es verdadera. Utilice la cláusula else opcional para ejecutar una sentencia si la condición es falsa. Una sentencia if tiene el siguiente aspecto:</p>
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
+            <p>condition puede ser cualquier expresión que se evalúe como verdadera o falsa. Consulte Boolean para obtener una explicación de qué se evalúa como verdadero y falso. Si condition se evalúa como verdadera, se ejecuta statement_1; de lo contrario, se ejecuta statement_2. statement_1 y statement_2 pueden ser cualquier sentencia, incluidas otras sentencias if anidadas.</p>
+            <p>También puedes componer las declaraciones usando else if para tener múltiples condiciones probadas en secuencia, de la siguiente manera:</p>
+            <code>if (condition_1) { statement_1; } else if (condition_2) {
+            statement_2; } else if (condition_n) { statement_n; } else {
+            statement_last; }</code>
+            <p>En el caso de múltiples condiciones, solo se ejecutará la primera condición lógica que evalúe como verdadera. Para ejecutar múltiples declaraciones, agrúpelas dentro de una declaración de bloque ({ ... }) . En general, es una buena práctica usar siempre declaraciones de bloque, especialmente cuando se anidan declaraciones if:</p>
+            <code>if (condition) { statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true; } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false; }</code>
+            <p>Es aconsejable no usar asignaciones simples en una expresión condicional, porque la asignación se puede confundir con la igualdad al revisar el código. Por ejemplo, no use el siguiente código:</p>
+            <code>if (x = y) { /* statements here */ }</code>
+            <p>Si necesita usar una asignación en una expresión condicional, una práctica común es poner paréntesis adicionales alrededor de la asignación. Por ejemplo:</p>
+            <code>if ((x = y)) { /* statements here */ }</code>
+        </section>
+    </main>
+</body>
+</html>
